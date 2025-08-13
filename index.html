@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>James — Binayak's AI</title>
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.webmanifest">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>James — नमस्ते, Binayak!</h1>
+      <div id="status"><span id="mood">mood: neutral</span> • <span id="online">offline</span></div>
+    </header>
+
+    <section class="chat" id="log"></section>
+
+    <section class="controls">
+      <textarea id="input" placeholder="Type or speak to James… (Nepali/English)"></textarea>
+      <div class="buttons">
+        <button id="mic">🎤 Listen</button>
+        <button id="ask">➤ Ask</button>
+        <button id="clear" class="ghost">Clear</button>
+      </div>
+
+      <details>
+        <summary>Settings</summary>
+        <div class="settings">
+          <label>Voice <select id="voice"></select></label>
+          <label>Rate <input id="rate" type="range" min="0.6" max="1.2" step="0.01" value="0.9"></label>
+          <label>Pitch <input id="pitch" type="range" min="0.7" max="1.2" step="0.01" value="0.95"></label>
+          <label><input id="forceNep" type="checkbox"> Force Nepali</label>
+          <label><input id="onlineMood" type="checkbox"> Use online mood (optional)</label>
+        </div>
+      </details>
+    </section>
+
+    <footer>
+      <small>Private — memory stays in your browser. Add to Home Screen for app-like use.</small>
+    </footer>
+  </main>
+<script src="app.js"></script>
+</body>
+</html>
